@@ -56,6 +56,8 @@ AAPropSetFuncImplementation(AAYAxis, BOOL,       opposite);//是否将坐标轴�
 AAPropSetFuncImplementation(AAYAxis, NSNumber *, tickInterval);
 AAPropSetFuncImplementation(AAYAxis, AACrosshair*, crosshair); //准星线样式设置
 AAPropSetFuncImplementation(AAYAxis, AALabels *, stackLabels);
+AAPropSetFuncImplementation(AAYAxis, NSString *, height);
+AAPropSetFuncImplementation(AAYAxis, NSString *, top);
 
 
 

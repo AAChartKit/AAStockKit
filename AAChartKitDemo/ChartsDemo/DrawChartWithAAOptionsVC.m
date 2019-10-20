@@ -32,6 +32,7 @@
 
 #import "DrawChartWithAAOptionsVC.h"
 #import "AAChartKit.h"
+#import "AAStockOptionsComposer.h"
 
 #import "AADateUTCTool.h"
 @interface DrawChartWithAAOptionsVC ()
@@ -60,7 +61,7 @@
 
 - (AAOptions *)configureChartOptions {
     switch (self.selectedIndex) {
-        case 0: return [self configureTheAAOptionsOfAreaChart];
+        case 0: return [AAStockOptionsComposer stockOptions];
         case 1: return [self configureTheAAOptionsOfPieChart];
         case 2: return [self adjustPieChartTitleAndDataLabelFontStyle];
         case 3: return [self configureTheAAOptionsOfSpecialNestedColumnChart];
